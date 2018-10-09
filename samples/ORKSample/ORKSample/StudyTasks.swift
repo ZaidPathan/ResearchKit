@@ -49,7 +49,7 @@ struct StudyTasks {
     static let trailmakingTask: ORKOrderedTask = {
         let intendedUseDescription = "Tests visual attention and task switching"
         
-        return ORKOrderedTask.trailmakingTask(withIdentifier: "TrailmakingTask", intendedUseDescription: intendedUseDescription, trailmakingInstruction: nil, trailType: .B, options: ORKPredefinedTaskOption())
+        return ORKOrderedTask.sevenMinuteExercise(withIdentifier: "seven", options: ORKPredefinedTaskOption.init(rawValue: 0))
     }()
     
     static let surveyTask: ORKOrderedTask = {

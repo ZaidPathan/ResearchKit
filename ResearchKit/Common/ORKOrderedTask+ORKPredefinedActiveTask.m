@@ -38,6 +38,7 @@
 #import "ORKCountdownStepViewController.h"
 #import "ORKTouchAnywhereStepViewController.h"
 #import "ORKFitnessStepViewController.h"
+#import "ORKSevenMinuteExerciseStepViewController.h"
 #import "ORKToneAudiometryStepViewController.h"
 #import "ORKSpatialSpanMemoryStepViewController.h"
 #import "ORKSpeechRecognitionStepViewController.h"
@@ -58,6 +59,7 @@
 #import "ORKHolePegTestRemoveStep.h"
 #import "ORKTouchAnywhereStep.h"
 #import "ORKFitnessStep.h"
+#import "ORKSevenMinuteExerciseStep.h"
 #import "ORKFormStep.h"
 #import "ORKNavigableOrderedTask.h"
 #import "ORKPSATStep.h"
@@ -2626,4 +2628,241 @@ NSString *const ORKTrailmakingStepIdentifier = @"trailmaking";
     return task;
 }
 
+
+
+#pragma mark - fitnessCheckTask
+
+NSString *const ORKSevenMinExercise1StepIdentifier = @"seven.exercise1";
+NSString *const ORKSevenMinExercise2StepIdentifier = @"seven.exercise2";
+NSString *const ORKSevenMinExercise3StepIdentifier = @"seven.exercise3";
+
+NSString *const ORKSevenMinExercise4StepIdentifier = @"seven.exercise4";
+NSString *const ORKSevenMinExercise5StepIdentifier = @"seven.exercise5";
+NSString *const ORKSevenMinExercise6StepIdentifier = @"seven.exercise6";
+
+NSString *const ORKSevenMinExercise7StepIdentifier = @"seven.exercise7";
+NSString *const ORKSevenMinExercise8StepIdentifier = @"seven.exercise8";
+NSString *const ORKSevenMinExercise9StepIdentifier = @"seven.exercise9";
+
+NSString *const ORKSevenMinExercise10StepIdentifier = @"seven.exercise10";
+NSString *const ORKSevenMinExercise11StepIdentifier = @"seven.exercise11";
+NSString *const ORKSevenMinExercise12StepIdentifier = @"seven.exercise12";
+
+NSString *const ORKSevenMinRest1StepIdentifier = @"seven.rest1";
+NSString *const ORKSevenMinRest2StepIdentifier = @"seven.rest2";
+NSString *const ORKSevenMinRest3StepIdentifier = @"seven.rest3";
+
+NSString *const ORKSevenMinRest4StepIdentifier = @"seven.rest4";
+NSString *const ORKSevenMinRest5StepIdentifier = @"seven.rest5";
+NSString *const ORKSevenMinRest6StepIdentifier = @"seven.rest6";
+
+NSString *const ORKSevenMinRest7StepIdentifier = @"seven.rest7";
+NSString *const ORKSevenMinRest8StepIdentifier = @"seven.rest8";
+NSString *const ORKSevenMinRest9StepIdentifier = @"seven.rest9";
+
+NSString *const ORKSevenMinRest10StepIdentifier = @"seven.rest10";
+NSString *const ORKSevenMinRest11StepIdentifier = @"seven.rest11";
+NSString *const ORKSevenMinRest12StepIdentifier = @"seven.rest12";
+
+
++ (ORKOrderedTask *)sevenMinuteExerciseWithIdentifier:(NSString *)identifier
+                                           options:(ORKPredefinedTaskOption)options {
+    
+    
+    NSMutableArray *steps = [NSMutableArray array];
+    if (!(options & ORKPredefinedTaskOptionExcludeInstructions)) {
+        {
+        ORKInstructionStep *step = [[ORKInstructionStep alloc] initWithIdentifier:ORKInstruction0StepIdentifier];
+        step.title = @"Seven Min Exercise";
+        step.text = @"Seven Min Task";
+        step.image = [UIImage imageNamed:@"heartbeat" inBundle:[NSBundle bundleForClass:[self class]] compatibleWithTraitCollection:nil];
+        step.shouldTintImages = YES;
+        
+        ORKStepArrayAddStep(steps, step);
+        }
+        
+        {
+        ORKInstructionStep *step = [[ORKInstructionStep alloc] initWithIdentifier:ORKInstruction1StepIdentifier];
+        step.title = @"Seven Minute Task";
+        step.text = @"Seven Minute Task";
+        step.image = [UIImage imageNamed:@"walkingman" inBundle:[NSBundle bundleForClass:[self class]] compatibleWithTraitCollection:nil];
+        step.shouldTintImages = YES;
+        
+        ORKStepArrayAddStep(steps, step);
+        }
+    }
+    
+    {
+    ORKCountdownStep *step = [[ORKCountdownStep alloc] initWithIdentifier:ORKCountdownStepIdentifier];
+    step.title = @"Seven Minute Task";
+    step.stepDuration = 5.0;
+    
+    ORKStepArrayAddStep(steps, step);
+    }
+    
+    HKUnit *bpmUnit = [[HKUnit countUnit] unitDividedByUnit:[HKUnit minuteUnit]];
+    HKQuantityType *heartRateType = [HKQuantityType quantityTypeForIdentifier:HKQuantityTypeIdentifierHeartRate];
+    {
+    //MARK: exercise step
+        ORKSevenMinuteExerciseStep *sevenMinStep1 = [ORKOrderedTask sevenMinuteTasks:ORKSevenMinExercise1StepIdentifier title:@"Jumping Jack" text:@"Start Jumping Jack" image:@"timed-walkingman-outbound" options:options heartRateType:heartRateType bpmUnit:bpmUnit];
+        ORKStepArrayAddStep(steps, sevenMinStep1);
+    
+    
+    //MARK: rest step
+    ORKSevenMinuteExerciseStep *sevenMinRestStep1 = [ORKOrderedTask sevenMinuteTasks:ORKSevenMinRest1StepIdentifier title:@"Rest" text:@"Take 10 sec rest" image:@"sittingman" options:options heartRateType:heartRateType bpmUnit:bpmUnit];
+        ORKStepArrayAddStep(steps, sevenMinRestStep1);
+    
+    //MARK: exercise step
+    ORKSevenMinuteExerciseStep *sevenMinStep2 = [ORKOrderedTask sevenMinuteTasks:ORKSevenMinExercise2StepIdentifier title:@"Wall Set" text:@"Start Wall Set" image:@"timed-walkingman-outbound" options:options heartRateType:heartRateType bpmUnit:bpmUnit];
+    ORKStepArrayAddStep(steps, sevenMinStep2);
+    
+    
+    //MARK: rest step
+    ORKSevenMinuteExerciseStep *sevenMinRestStep2 = [ORKOrderedTask sevenMinuteTasks:ORKSevenMinRest2StepIdentifier title:@"Rest" text:@"Take 10 sec rest" image:@"sittingman" options:options heartRateType:heartRateType bpmUnit:bpmUnit];
+    ORKStepArrayAddStep(steps, sevenMinRestStep2);
+    
+    //MARK: exercise step
+    ORKSevenMinuteExerciseStep *sevenMinStep3 = [ORKOrderedTask sevenMinuteTasks:ORKSevenMinExercise3StepIdentifier title:@"Push Ups" text:@"Push Ups" image:@"timed-walkingman-outbound" options:options heartRateType:heartRateType bpmUnit:bpmUnit];
+    ORKStepArrayAddStep(steps, sevenMinStep3);
+    
+    
+    //MARK: rest step
+    ORKSevenMinuteExerciseStep *sevenMinRestStep3 = [ORKOrderedTask sevenMinuteTasks:ORKSevenMinRest3StepIdentifier title:@"Rest" text:@"Take 10 sec rest" image:@"sittingman" options:options heartRateType:heartRateType bpmUnit:bpmUnit];
+    ORKStepArrayAddStep(steps, sevenMinRestStep3);
+    
+    //MARK: exercise step
+    ORKSevenMinuteExerciseStep *sevenMinStep4 = [ORKOrderedTask sevenMinuteTasks:ORKSevenMinExercise4StepIdentifier title:@"Abdominal Crunches" text:@"Start Abdominal Crunches" image:@"timed-walkingman-outbound" options:options heartRateType:heartRateType bpmUnit:bpmUnit];
+    ORKStepArrayAddStep(steps, sevenMinStep4);
+    
+    
+    //MARK: rest step
+    ORKSevenMinuteExerciseStep *sevenMinRestStep4 = [ORKOrderedTask sevenMinuteTasks:ORKSevenMinRest4StepIdentifier title:@"Rest" text:@"Take 10 sec rest" image:@"sittingman" options:options heartRateType:heartRateType bpmUnit:bpmUnit];
+    ORKStepArrayAddStep(steps, sevenMinRestStep4);
+    
+    
+    
+    //MARK: exercise step
+    ORKSevenMinuteExerciseStep *sevenMinStep5 = [ORKOrderedTask sevenMinuteTasks:ORKSevenMinExercise5StepIdentifier title:@"Step Up" text:@"Step Up Onto Chair" image:@"timed-walkingman-outbound" options:options heartRateType:heartRateType bpmUnit:bpmUnit];
+    ORKStepArrayAddStep(steps, sevenMinStep5);
+    
+    
+    //MARK: rest step
+    ORKSevenMinuteExerciseStep *sevenMinRestStep5 = [ORKOrderedTask sevenMinuteTasks:ORKSevenMinRest5StepIdentifier title:@"Rest" text:@"Take 10 sec rest" image:@"sittingman" options:options heartRateType:heartRateType bpmUnit:bpmUnit];
+    ORKStepArrayAddStep(steps, sevenMinRestStep5);
+    
+    //MARK: exercise step
+    ORKSevenMinuteExerciseStep *sevenMinStep6 = [ORKOrderedTask sevenMinuteTasks:ORKSevenMinExercise6StepIdentifier title:@"Squat" text:@"Start Squat" image:@"timed-walkingman-outbound" options:options heartRateType:heartRateType bpmUnit:bpmUnit];
+    ORKStepArrayAddStep(steps, sevenMinStep6);
+    
+    
+    //MARK: rest step
+    ORKSevenMinuteExerciseStep *sevenMinRestStep6 = [ORKOrderedTask sevenMinuteTasks:ORKSevenMinRest6StepIdentifier title:@"Rest" text:@"Take 10 sec rest" image:@"sittingman" options:options heartRateType:heartRateType bpmUnit:bpmUnit];
+    ORKStepArrayAddStep(steps, sevenMinRestStep6);
+    
+    //MARK: exercise step
+    ORKSevenMinuteExerciseStep *sevenMinStep7 = [ORKOrderedTask sevenMinuteTasks:ORKSevenMinExercise7StepIdentifier title:@"Triceps" text:@"Triceps dip on chair" image:@"timed-walkingman-outbound" options:options heartRateType:heartRateType bpmUnit:bpmUnit];
+    ORKStepArrayAddStep(steps, sevenMinStep7);
+    
+    
+    //MARK: rest step
+    ORKSevenMinuteExerciseStep *sevenMinRestStep7 = [ORKOrderedTask sevenMinuteTasks:ORKSevenMinRest7StepIdentifier title:@"Rest" text:@"Take 10 sec rest" image:@"sittingman" options:options heartRateType:heartRateType bpmUnit:bpmUnit];
+    ORKStepArrayAddStep(steps, sevenMinRestStep7);
+    
+    //MARK: exercise step
+    ORKSevenMinuteExerciseStep *sevenMinStep8 = [ORKOrderedTask sevenMinuteTasks:ORKSevenMinExercise8StepIdentifier title:@"Plank" text:@"Plank" image:@"timed-walkingman-outbound" options:options heartRateType:heartRateType bpmUnit:bpmUnit];
+    ORKStepArrayAddStep(steps, sevenMinStep8);
+    
+    
+    //MARK: rest step
+    ORKSevenMinuteExerciseStep *sevenMinRestStep8 = [ORKOrderedTask sevenMinuteTasks:ORKSevenMinRest8StepIdentifier title:@"Rest" text:@"Take 10 sec rest" image:@"sittingman" options:options heartRateType:heartRateType bpmUnit:bpmUnit];
+    ORKStepArrayAddStep(steps, sevenMinRestStep8);
+    
+
+
+
+
+//MARK: exercise step
+ORKSevenMinuteExerciseStep *sevenMinStep9 = [ORKOrderedTask sevenMinuteTasks:ORKSevenMinExercise9StepIdentifier title:@"Running" text:@"Start Running High knees in place" image:@"timed-walkingman-outbound" options:options heartRateType:heartRateType bpmUnit:bpmUnit];
+ORKStepArrayAddStep(steps, sevenMinStep9);
+
+
+//MARK: rest step
+ORKSevenMinuteExerciseStep *sevenMinRestStep9 = [ORKOrderedTask sevenMinuteTasks:ORKSevenMinRest9StepIdentifier title:@"Rest" text:@"Take 10 sec rest" image:@"sittingman" options:options heartRateType:heartRateType bpmUnit:bpmUnit];
+ORKStepArrayAddStep(steps, sevenMinRestStep9);
+
+//MARK: exercise step
+    ORKSevenMinuteExerciseStep *sevenMinStep10 = [ORKOrderedTask sevenMinuteTasks:ORKSevenMinExercise10StepIdentifier title:@"Lunge" text:@"Start Lunges" image:@"timed-walkingman-outbound" options:options heartRateType:heartRateType bpmUnit:bpmUnit];
+ORKStepArrayAddStep(steps, sevenMinStep10);
+
+
+//MARK: rest step
+ORKSevenMinuteExerciseStep *sevenMinRestStep10 = [ORKOrderedTask sevenMinuteTasks:ORKSevenMinRest10StepIdentifier title:@"Rest" text:@"Take 10 sec rest" image:@"sittingman" options:options heartRateType:heartRateType bpmUnit:bpmUnit];
+ORKStepArrayAddStep(steps, sevenMinRestStep10);
+
+//MARK: exercise step
+ORKSevenMinuteExerciseStep *sevenMinStep11 = [ORKOrderedTask sevenMinuteTasks:ORKSevenMinExercise11StepIdentifier title:@"Push Up Rotation" text:@"Start Push Up Rotation" image:@"timed-walkingman-outbound" options:options heartRateType:heartRateType bpmUnit:bpmUnit];
+ORKStepArrayAddStep(steps, sevenMinStep11);
+
+
+//MARK: rest step
+ORKSevenMinuteExerciseStep *sevenMinRestStep11 = [ORKOrderedTask sevenMinuteTasks:ORKSevenMinRest11StepIdentifier title:@"Rest" text:@"Take 10 sec rest" image:@"sittingman" options:options heartRateType:heartRateType bpmUnit:bpmUnit];
+ORKStepArrayAddStep(steps, sevenMinRestStep11);
+
+//MARK: exercise step
+ORKSevenMinuteExerciseStep *sevenMinStep12 = [ORKOrderedTask sevenMinuteTasks:ORKSevenMinExercise12StepIdentifier title:@"Side Plank" text:@"Start Side Plank" image:@"timed-walkingman-outbound" options:options heartRateType:heartRateType bpmUnit:bpmUnit];
+ORKStepArrayAddStep(steps, sevenMinStep12);
+
+
+//MARK: rest step
+ORKSevenMinuteExerciseStep *sevenMinRestStep12 = [ORKOrderedTask sevenMinuteTasks:ORKSevenMinRest12StepIdentifier title:@"Rest" text:@"Take 10 sec rest" image:@"sittingman" options:options heartRateType:heartRateType bpmUnit:bpmUnit];
+ORKStepArrayAddStep(steps, sevenMinRestStep12);
+
+}
+    ORKOrderedTask *task = [[ORKOrderedTask alloc] initWithIdentifier:identifier steps:steps];
+    
+    return task;
+}
+
++ (ORKSevenMinuteExerciseStep *) sevenMinuteTasks:(NSString *)identifier title:(NSString *)title text:(NSString *)text image:(NSString *)imageName options:(ORKPredefinedTaskOption)options heartRateType:(HKQuantityType *)heartRateType bpmUnit:(HKUnit *)bpmUnit{
+    
+    NSMutableArray *recorderConfigurations = [NSMutableArray arrayWithCapacity:5];
+    if (!(ORKPredefinedTaskOptionExcludePedometer & options)) {
+        [recorderConfigurations addObject:[[ORKPedometerRecorderConfiguration alloc] initWithIdentifier:ORKPedometerRecorderIdentifier]];
+    }
+    if (!(ORKPredefinedTaskOptionExcludeAccelerometer & options)) {
+        [recorderConfigurations addObject:[[ORKAccelerometerRecorderConfiguration alloc] initWithIdentifier:ORKAccelerometerRecorderIdentifier frequency:100]];
+    }
+    if (!(ORKPredefinedTaskOptionExcludeDeviceMotion & options)) {
+        [recorderConfigurations addObject:[[ORKDeviceMotionRecorderConfiguration alloc] initWithIdentifier:ORKDeviceMotionRecorderIdentifier frequency:100]];
+    }
+    if (!(ORKPredefinedTaskOptionExcludeLocation & options)) {
+        [recorderConfigurations addObject:[[ORKLocationRecorderConfiguration alloc] initWithIdentifier:ORKLocationRecorderIdentifier]];
+    }
+    if (!(ORKPredefinedTaskOptionExcludeHeartRate & options)) {
+        [recorderConfigurations addObject:[[ORKHealthQuantityTypeRecorderConfiguration alloc] initWithIdentifier:ORKHeartRateRecorderIdentifier
+              healthQuantityType:heartRateType unit:bpmUnit]];
+    }
+    
+    int stepDuration = 30;
+    if([identifier  containsString: @"seven.rest"]){
+        stepDuration = 10;
+    }
+    
+    ORKSevenMinuteExerciseStep *sevenMinStep = [[ORKSevenMinuteExerciseStep alloc] initWithIdentifier:identifier];
+    sevenMinStep.stepDuration = stepDuration;
+    sevenMinStep.title = title;
+    sevenMinStep.text = text;
+    sevenMinStep.spokenInstruction = sevenMinStep.text;
+    sevenMinStep.recorderConfigurations = recorderConfigurations;
+    sevenMinStep.shouldContinueOnFinish = YES;
+    sevenMinStep.optional = NO;
+    sevenMinStep.shouldStartTimerAutomatically = YES;
+    sevenMinStep.shouldTintImages = NO;
+    sevenMinStep.image = [UIImage imageNamed:imageName inBundle:[NSBundle bundleForClass:[self class]] compatibleWithTraitCollection:nil];
+    sevenMinStep.shouldVibrateOnStart = YES;
+    sevenMinStep.shouldPlaySoundOnStart = YES;
+    
+    
+    return sevenMinStep;
+}
 @end

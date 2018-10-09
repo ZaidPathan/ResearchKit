@@ -681,6 +681,12 @@ NS_ASSUME_NONNULL_BEGIN
                                         trailType:(ORKTrailMakingTypeIdentifier)trailType
                                           options:(ORKPredefinedTaskOption)options;
 
+
++ (ORKOrderedTask *)sevenMinuteExerciseWithIdentifier:(NSString *)identifier
+                            options:(ORKPredefinedTaskOption)options;
+
+//+ (ORKStep *) sevenMinuteTasks:(NSString *)title text:(NSString *)text image:(NSString *)imageName options:(ORKPredefinedTaskOption)options heartRateType:(HKQuantityType *)heartRateType bpmUnit:(HKUnit *)bpmUnit;
+
 @end
 
 NS_ASSUME_NONNULL_END

@@ -34,7 +34,9 @@
 	<string>Use microphone</string>
 	<key>UILaunchStoryboardName</key>
 	<string>LaunchScreen</string>
-	<key>UIMainStoryboardFile</key>
+    <key>NSMotionUsageDescription</key>
+    <string>Sample message regarding phone motion usage.</string>
+    <key>UIMainStoryboardFile</key>
 	<string>Main</string>
 	<key>UIRequiredDeviceCapabilities</key>
 	<array>

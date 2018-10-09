@@ -22,6 +22,13 @@
 /* End PBXAggregateTarget section */
 
 /* Begin PBXBuildFile section */
+		050904CA216CADC900E7B22E /* Artwork.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 050904C9216CADC400E7B22E /* Artwork.xcassets */; };
+		055E577F216B6ED1008E9B3F /* ORKSevenMinuteExerciseStep.h in Headers */ = {isa = PBXBuildFile; fileRef = 055E5779216B6E4F008E9B3F /* ORKSevenMinuteExerciseStep.h */; };
+		055E5780216B6ED1008E9B3F /* ORKSevenMinuteExerciseStep.m in Sources */ = {isa = PBXBuildFile; fileRef = 055E577C216B6E50008E9B3F /* ORKSevenMinuteExerciseStep.m */; };
+		055E5781216B6ED1008E9B3F /* ORKSevenMinuteExerciseContentView.h in Headers */ = {isa = PBXBuildFile; fileRef = 055E577E216B6E50008E9B3F /* ORKSevenMinuteExerciseContentView.h */; };
+		055E5782216B6ED1008E9B3F /* ORKSevenMinuteExerciseContentView.m in Sources */ = {isa = PBXBuildFile; fileRef = 055E577B216B6E50008E9B3F /* ORKSevenMinuteExerciseContentView.m */; };
+		055E5783216B6ED1008E9B3F /* ORKSevenMinuteExerciseStepViewController.h in Headers */ = {isa = PBXBuildFile; fileRef = 055E577D216B6E50008E9B3F /* ORKSevenMinuteExerciseStepViewController.h */; };
+		055E5784216B6ED1008E9B3F /* ORKSevenMinuteExerciseStepViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 055E577A216B6E4F008E9B3F /* ORKSevenMinuteExerciseStepViewController.m */; };
 		106FF29E1B663FCE004EACF2 /* ORKHolePegTestPlaceStep.h in Headers */ = {isa = PBXBuildFile; fileRef = 106FF29C1B663FCE004EACF2 /* ORKHolePegTestPlaceStep.h */; settings = {ATTRIBUTES = (Private, ); }; };
 		106FF29F1B663FCE004EACF2 /* ORKHolePegTestPlaceStep.m in Sources */ = {isa = PBXBuildFile; fileRef = 106FF29D1B663FCE004EACF2 /* ORKHolePegTestPlaceStep.m */; };
 		106FF2A21B665B86004EACF2 /* ORKHolePegTestPlaceStepViewController.h in Headers */ = {isa = PBXBuildFile; fileRef = 106FF2A01B665B86004EACF2 /* ORKHolePegTestPlaceStepViewController.h */; settings = {ATTRIBUTES = (Private, ); }; };
@@ -522,7 +529,6 @@
 		B11C549B1A9EEF8800265E61 /* ORKConsentSharingStep.m in Sources */ = {isa = PBXBuildFile; fileRef = B11C54971A9EEF8800265E61 /* ORKConsentSharingStep.m */; };
 		B11C549F1A9EF4A700265E61 /* ORKConsentSharingStepViewController.h in Headers */ = {isa = PBXBuildFile; fileRef = B11C549C1A9EF4A700265E61 /* ORKConsentSharingStepViewController.h */; settings = {ATTRIBUTES = (Private, ); }; };
 		B11C54A11A9EF4A700265E61 /* ORKConsentSharingStepViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B11C549D1A9EF4A700265E61 /* ORKConsentSharingStepViewController.m */; };
-		B17FE7FD1A8DBE7C00BF9C28 /* Artwork.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 861610BF1A8D8EDD00245F7A /* Artwork.xcassets */; };
 		B183A4A21A8535D100C76870 /* ResearchKit_Private.h in Headers */ = {isa = PBXBuildFile; fileRef = B1B894391A00345200C5CF2D /* ResearchKit_Private.h */; settings = {ATTRIBUTES = (Private, ); }; };
 		B183A4DD1A8535D100C76870 /* ResearchKit.h in Headers */ = {isa = PBXBuildFile; fileRef = B1C1DE4F196F541F00F75544 /* ResearchKit.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		B1A860EA1A9693C400EA57B7 /* consent_01@2x.m4v in Resources */ = {isa = PBXBuildFile; fileRef = B1A860DB1A9693C400EA57B7 /* consent_01@2x.m4v */; };
@@ -745,6 +751,13 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		050904C9216CADC400E7B22E /* Artwork.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Artwork.xcassets; sourceTree = "<group>"; };
+		055E5779216B6E4F008E9B3F /* ORKSevenMinuteExerciseStep.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ORKSevenMinuteExerciseStep.h; sourceTree = "<group>"; };
+		055E577A216B6E4F008E9B3F /* ORKSevenMinuteExerciseStepViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ORKSevenMinuteExerciseStepViewController.m; sourceTree = "<group>"; };
+		055E577B216B6E50008E9B3F /* ORKSevenMinuteExerciseContentView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ORKSevenMinuteExerciseContentView.m; sourceTree = "<group>"; };
+		055E577C216B6E50008E9B3F /* ORKSevenMinuteExerciseStep.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ORKSevenMinuteExerciseStep.m; sourceTree = "<group>"; };
+		055E577D216B6E50008E9B3F /* ORKSevenMinuteExerciseStepViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ORKSevenMinuteExerciseStepViewController.h; sourceTree = "<group>"; };
+		055E577E216B6E50008E9B3F /* ORKSevenMinuteExerciseContentView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ORKSevenMinuteExerciseContentView.h; sourceTree = "<group>"; };
 		106FF29C1B663FCE004EACF2 /* ORKHolePegTestPlaceStep.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ORKHolePegTestPlaceStep.h; sourceTree = "<group>"; };
 		106FF29D1B663FCE004EACF2 /* ORKHolePegTestPlaceStep.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ORKHolePegTestPlaceStep.m; sourceTree = "<group>"; };
 		106FF2A01B665B86004EACF2 /* ORKHolePegTestPlaceStepViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ORKHolePegTestPlaceStepViewController.h; sourceTree = "<group>"; };
@@ -924,7 +937,6 @@
 		8419D66D1FB73CC80088D7E5 /* ORKWebViewStep.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ORKWebViewStep.m; sourceTree = "<group>"; };
 		8419D6701FB73EC60088D7E5 /* ORKWebViewStepViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ORKWebViewStepViewController.h; sourceTree = "<group>"; };
 		8419D6711FB73EC60088D7E5 /* ORKWebViewStepViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ORKWebViewStepViewController.m; sourceTree = "<group>"; };
-		861610BF1A8D8EDD00245F7A /* Artwork.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Artwork.xcassets; sourceTree = "<group>"; };
 		861D11A71AA691BB003C98A7 /* ORKScaleSliderView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ORKScaleSliderView.h; sourceTree = "<group>"; };
 		861D11A81AA691BB003C98A7 /* ORKScaleSliderView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ORKScaleSliderView.m; sourceTree = "<group>"; };
 		861D11AB1AA7951F003C98A7 /* ORKChoiceAnswerFormatHelper.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ORKChoiceAnswerFormatHelper.h; sourceTree = "<group>"; };
@@ -1516,6 +1528,19 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		055E5749216B3D3E008E9B3F /* Seven Minute Task */ = {
+			isa = PBXGroup;
+			children = (
+				055E5779216B6E4F008E9B3F /* ORKSevenMinuteExerciseStep.h */,
+				055E577C216B6E50008E9B3F /* ORKSevenMinuteExerciseStep.m */,
+				055E577E216B6E50008E9B3F /* ORKSevenMinuteExerciseContentView.h */,
+				055E577B216B6E50008E9B3F /* ORKSevenMinuteExerciseContentView.m */,
+				055E577D216B6E50008E9B3F /* ORKSevenMinuteExerciseStepViewController.h */,
+				055E577A216B6E4F008E9B3F /* ORKSevenMinuteExerciseStepViewController.m */,
+			);
+			name = "Seven Minute Task";
+			sourceTree = "<group>";
+		};
 		106FF29B1B663F5C004EACF2 /* Hole Peg Test */ = {
 			isa = PBXGroup;
 			children = (
@@ -1998,9 +2023,9 @@
 				2429D56D1BBB52E4003A512F /* Onboarding */,
 				618DA0471A93D0D600E63AA8 /* Accessibility */,
 				B1A860D91A9693C400EA57B7 /* Animations */,
-				861610BF1A8D8EDD00245F7A /* Artwork.xcassets */,
 				B1C0F4E01A9BA65F0022C153 /* Localized */,
 				86C40C101A8D7C5C00081FAC /* Info.plist */,
+				050904C9216CADC400E7B22E /* Artwork.xcassets */,
 				B18AABE01A9F08D9003871B5 /* ResearchKit.modulemap */,
 			);
 			path = ResearchKit;
@@ -2009,6 +2034,7 @@
 		86C40AF91A8D7C5B00081FAC /* Active Tasks */ = {
 			isa = PBXGroup;
 			children = (
+				055E5749216B3D3E008E9B3F /* Seven Minute Task */,
 				7118AC5820BF69C200D7A6BB /* Speech in Noise */,
 				71BD9EA220969AD3007B436E /* evironmentSPLMeter */,
 				71769E2620880BA800A19914 /* dBHL Tone Audiometry */,
@@ -3244,6 +3270,7 @@
 				FF919A691E81D255005C2A1E /* ORKConsentSignatureResult.h in Headers */,
 				866DA5271D63D04700C9AF3F /* ORKMotionActivityQueryOperation.h in Headers */,
 				106FF2B41B71F18E004EACF2 /* ORKHolePegTestPlaceHoleView.h in Headers */,
+				055E577F216B6ED1008E9B3F /* ORKSevenMinuteExerciseStep.h in Headers */,
 				86C40D921A8D7C5C00081FAC /* ORKStep_Private.h in Headers */,
 				86C40CC41A8D7C5C00081FAC /* ORKCompletionStepViewController.h in Headers */,
 				FF919A431E81B904005C2A1E /* ORKPSATResult.h in Headers */,
@@ -3406,6 +3433,8 @@
 				2489F7B11D65214D008DEF20 /* ORKVideoCaptureStep.h in Headers */,
 				861D11AD1AA7951F003C98A7 /* ORKChoiceAnswerFormatHelper.h in Headers */,
 				86C40C461A8D7C5C00081FAC /* ORKSpatialSpanMemoryStepViewController.h in Headers */,
+				055E5783216B6ED1008E9B3F /* ORKSevenMinuteExerciseStepViewController.h in Headers */,
+				055E5781216B6ED1008E9B3F /* ORKSevenMinuteExerciseContentView.h in Headers */,
 				86C40C521A8D7C5C00081FAC /* ORKTappingIntervalStep.h in Headers */,
 				86C40D8A1A8D7C5C00081FAC /* ORKSkin.h in Headers */,
 				8419D6721FB73EC60088D7E5 /* ORKWebViewStepViewController.h in Headers */,
@@ -3564,6 +3593,7 @@
 				71B7B4DA20AA91D400C5768A /* retspl_AIRPODS.plist in Resources */,
 				71F3B28021001DED00FB1C41 /* splMeter_sensitivity_offset.plist in Resources */,
 				713D4B1E20FE5480002BE28D /* retspl_EARPODS.plist in Resources */,
+				050904CA216CADC900E7B22E /* Artwork.xcassets in Resources */,
 				B1A860F31A9693C400EA57B7 /* consent_03@3x.m4v in Resources */,
 				B1A860F11A9693C400EA57B7 /* consent_01@3x.m4v in Resources */,
 				B1A860F71A9693C400EA57B7 /* consent_07@3x.m4v in Resources */,
@@ -3583,7 +3613,6 @@
 				B1A860ED1A9693C400EA57B7 /* consent_04@2x.m4v in Resources */,
 				7118AC6820BF6A3A00D7A6BB /* Sentence4.wav in Resources */,
 				BA22F76D20C4F884006E6E11 /* SentencesList.txt in Resources */,
-				B17FE7FD1A8DBE7C00BF9C28 /* Artwork.xcassets in Resources */,
 				7118AC6C20BF6A3A00D7A6BB /* Sentence2.wav in Resources */,
 				B1C0F4E41A9BA65F0022C153 /* ResearchKit.strings in Resources */,
 				86C40DFC1A8D7C5C00081FAC /* MovieTintShader.vsh in Resources */,
@@ -3860,6 +3889,7 @@
 				106FF2A71B665CF5004EACF2 /* ORKHolePegTestPlaceContentView.m in Sources */,
 				86C40D761A8D7C5C00081FAC /* ORKScaleRangeLabel.m in Sources */,
 				BABBB1BB2097EF3800CB29E5 /* ORKFreehandDrawingView.m in Sources */,
+				055E5782216B6ED1008E9B3F /* ORKSevenMinuteExerciseContentView.m in Sources */,
 				86C40C741A8D7C5C00081FAC /* CMPedometerData+ORKJSONDictionary.m in Sources */,
 				86AD91151AB7B97E00361FEB /* ORKQuestionStepView.m in Sources */,
 				71769E2A20880C4500A19914 /* ORKdBHLToneAudiometryResult.m in Sources */,
@@ -3922,6 +3952,8 @@
 				B11C549B1A9EEF8800265E61 /* ORKConsentSharingStep.m in Sources */,
 				FF0CB38B1FD5C4C3002D838C /* ORKWebViewStepResult.m in Sources */,
 				86C40DE01A8D7C5C00081FAC /* ORKVerticalContainerView.m in Sources */,
+				055E5784216B6ED1008E9B3F /* ORKSevenMinuteExerciseStepViewController.m in Sources */,
+				055E5780216B6ED1008E9B3F /* ORKSevenMinuteExerciseStep.m in Sources */,
 				71769E3E20884DB800A19914 /* ORKdBHLToneAudiometryStepViewController.m in Sources */,
 				BA5B9208204F5D9A007C2F9D /* ORKSpeechRecognitionResult.m in Sources */,
 				BCD192EC1B81245500FCC08A /* ORKPieChartTitleTextView.m in Sources */,
@@ -4188,7 +4220,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				INFOPLIST_FILE = "$(SRCROOT)/ResearchKit/Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				MODULEMAP_FILE = ResearchKit/ResearchKit.modulemap;
 				MTL_ENABLE_DEBUG_INFO = YES;
@@ -4220,7 +4252,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				INFOPLIST_FILE = "$(SRCROOT)/ResearchKit/Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				MODULEMAP_FILE = ResearchKit/ResearchKit.modulemap;
 				MTL_ENABLE_DEBUG_INFO = NO;

@@ -125,7 +125,8 @@ class ActivityViewController: UITableViewController {
                 taskViewController = ORKTaskViewController(task: StudyTasks.tappingTask, taskRun: NSUUID() as UUID)
             
             case .trailmaking:
-                taskViewController = ORKTaskViewController(task: StudyTasks.trailmakingTask, taskRun: NSUUID() as UUID)
+               taskViewController = ORKTaskViewController(task: StudyTasks.trailmakingTask, taskRun: NSUUID() as UUID)
+            taskViewController.outputDirectory = FileManager.default.urls(for: .documentDirectory, in: .allDomainsMask).first!
         }
 
         taskViewController.delegate = self
