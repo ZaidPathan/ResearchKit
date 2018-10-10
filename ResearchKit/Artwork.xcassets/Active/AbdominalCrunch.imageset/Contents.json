@@ -2,15 +2,17 @@
   "images" : [
     {
       "idiom" : "universal",
-      "filename" : "AbdominalCrunch.jpg",
+      "filename" : "AbdominalCrunshes.png",
       "scale" : "1x"
     },
     {
       "idiom" : "universal",
+      "filename" : "AbdominalCrunshes-1.png",
       "scale" : "2x"
     },
     {
       "idiom" : "universal",
+      "filename" : "AbdominalCrunshes-2.png",
       "scale" : "3x"
     }
   ],

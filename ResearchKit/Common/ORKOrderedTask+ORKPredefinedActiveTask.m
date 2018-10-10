@@ -2664,6 +2664,19 @@ NSString *const ORKSevenMinRest10StepIdentifier = @"seven.rest10";
 NSString *const ORKSevenMinRest11StepIdentifier = @"seven.rest11";
 NSString *const ORKSevenMinRest12StepIdentifier = @"seven.rest12";
 
+//MARK: rest step
++ (void)addRestStep:(NSString *)identifier
+                                      title: (NSString *)title
+                                      text: (NSString *) text
+                                      image: (NSString *) image
+                                      toSteps: (NSMutableArray *) steps
+                                    options:(ORKPredefinedTaskOption)options
+                                    bpmUnit:(HKUnit *)bpmUnit
+                              heartRateType:(HKQuantityType *)heartRateType {
+    
+    ORKSevenMinuteExerciseStep *sevenMinRestStep = [ORKOrderedTask sevenMinuteTasks:identifier title:title text:text image:image options:options heartRateType:heartRateType bpmUnit:bpmUnit];
+    ORKStepArrayAddStep(steps, sevenMinRestStep);
+}
 
 + (ORKOrderedTask *)sevenMinuteExerciseWithIdentifier:(NSString *)identifier
                                            options:(ORKPredefinedTaskOption)options {
@@ -2700,124 +2713,97 @@ NSString *const ORKSevenMinRest12StepIdentifier = @"seven.rest12";
     ORKStepArrayAddStep(steps, step);
     }
     
+    NSString *restTitle = @"Take rest";
+    NSString *restText = @"Take 10 seconds rest";
+    NSString *restImage = @"sittingman";
     HKUnit *bpmUnit = [[HKUnit countUnit] unitDividedByUnit:[HKUnit minuteUnit]];
     HKQuantityType *heartRateType = [HKQuantityType quantityTypeForIdentifier:HKQuantityTypeIdentifierHeartRate];
     {
-    //MARK: exercise step
-        ORKSevenMinuteExerciseStep *sevenMinStep1 = [ORKOrderedTask sevenMinuteTasks:ORKSevenMinExercise1StepIdentifier title:@"Jumping Jack" text:@"Start Jumping Jack" image:@"timed-walkingman-outbound" options:options heartRateType:heartRateType bpmUnit:bpmUnit];
+        //MARK: exercise step
+        ORKSevenMinuteExerciseStep *sevenMinStep1 = [ORKOrderedTask sevenMinuteTasks:ORKSevenMinExercise1StepIdentifier title:@"Jumping Jacks" text:@"Stand up with your legs spread and your hands touching overhead. Then as you jump, bring your legs back together and put your arms to your sides. You can speed these up or slow them down to suit your fitness level." image:@"JumpingJack" options:options heartRateType:heartRateType bpmUnit:bpmUnit];
         ORKStepArrayAddStep(steps, sevenMinStep1);
-    
-    
-    //MARK: rest step
-    ORKSevenMinuteExerciseStep *sevenMinRestStep1 = [ORKOrderedTask sevenMinuteTasks:ORKSevenMinRest1StepIdentifier title:@"Rest" text:@"Take 10 sec rest" image:@"sittingman" options:options heartRateType:heartRateType bpmUnit:bpmUnit];
-        ORKStepArrayAddStep(steps, sevenMinRestStep1);
-    
-    //MARK: exercise step
-    ORKSevenMinuteExerciseStep *sevenMinStep2 = [ORKOrderedTask sevenMinuteTasks:ORKSevenMinExercise2StepIdentifier title:@"Wall Set" text:@"Start Wall Set" image:@"timed-walkingman-outbound" options:options heartRateType:heartRateType bpmUnit:bpmUnit];
-    ORKStepArrayAddStep(steps, sevenMinStep2);
-    
-    
-    //MARK: rest step
-    ORKSevenMinuteExerciseStep *sevenMinRestStep2 = [ORKOrderedTask sevenMinuteTasks:ORKSevenMinRest2StepIdentifier title:@"Rest" text:@"Take 10 sec rest" image:@"sittingman" options:options heartRateType:heartRateType bpmUnit:bpmUnit];
-    ORKStepArrayAddStep(steps, sevenMinRestStep2);
-    
-    //MARK: exercise step
-    ORKSevenMinuteExerciseStep *sevenMinStep3 = [ORKOrderedTask sevenMinuteTasks:ORKSevenMinExercise3StepIdentifier title:@"Push Ups" text:@"Push Ups" image:@"timed-walkingman-outbound" options:options heartRateType:heartRateType bpmUnit:bpmUnit];
-    ORKStepArrayAddStep(steps, sevenMinStep3);
-    
-    
-    //MARK: rest step
-    ORKSevenMinuteExerciseStep *sevenMinRestStep3 = [ORKOrderedTask sevenMinuteTasks:ORKSevenMinRest3StepIdentifier title:@"Rest" text:@"Take 10 sec rest" image:@"sittingman" options:options heartRateType:heartRateType bpmUnit:bpmUnit];
-    ORKStepArrayAddStep(steps, sevenMinRestStep3);
-    
-    //MARK: exercise step
-    ORKSevenMinuteExerciseStep *sevenMinStep4 = [ORKOrderedTask sevenMinuteTasks:ORKSevenMinExercise4StepIdentifier title:@"Abdominal Crunches" text:@"Start Abdominal Crunches" image:@"timed-walkingman-outbound" options:options heartRateType:heartRateType bpmUnit:bpmUnit];
-    ORKStepArrayAddStep(steps, sevenMinStep4);
-    
-    
-    //MARK: rest step
-    ORKSevenMinuteExerciseStep *sevenMinRestStep4 = [ORKOrderedTask sevenMinuteTasks:ORKSevenMinRest4StepIdentifier title:@"Rest" text:@"Take 10 sec rest" image:@"sittingman" options:options heartRateType:heartRateType bpmUnit:bpmUnit];
-    ORKStepArrayAddStep(steps, sevenMinRestStep4);
-    
-    
-    
-    //MARK: exercise step
-    ORKSevenMinuteExerciseStep *sevenMinStep5 = [ORKOrderedTask sevenMinuteTasks:ORKSevenMinExercise5StepIdentifier title:@"Step Up" text:@"Step Up Onto Chair" image:@"timed-walkingman-outbound" options:options heartRateType:heartRateType bpmUnit:bpmUnit];
-    ORKStepArrayAddStep(steps, sevenMinStep5);
-    
-    
-    //MARK: rest step
-    ORKSevenMinuteExerciseStep *sevenMinRestStep5 = [ORKOrderedTask sevenMinuteTasks:ORKSevenMinRest5StepIdentifier title:@"Rest" text:@"Take 10 sec rest" image:@"sittingman" options:options heartRateType:heartRateType bpmUnit:bpmUnit];
-    ORKStepArrayAddStep(steps, sevenMinRestStep5);
-    
-    //MARK: exercise step
-    ORKSevenMinuteExerciseStep *sevenMinStep6 = [ORKOrderedTask sevenMinuteTasks:ORKSevenMinExercise6StepIdentifier title:@"Squat" text:@"Start Squat" image:@"timed-walkingman-outbound" options:options heartRateType:heartRateType bpmUnit:bpmUnit];
-    ORKStepArrayAddStep(steps, sevenMinStep6);
-    
-    
-    //MARK: rest step
-    ORKSevenMinuteExerciseStep *sevenMinRestStep6 = [ORKOrderedTask sevenMinuteTasks:ORKSevenMinRest6StepIdentifier title:@"Rest" text:@"Take 10 sec rest" image:@"sittingman" options:options heartRateType:heartRateType bpmUnit:bpmUnit];
-    ORKStepArrayAddStep(steps, sevenMinRestStep6);
-    
-    //MARK: exercise step
-    ORKSevenMinuteExerciseStep *sevenMinStep7 = [ORKOrderedTask sevenMinuteTasks:ORKSevenMinExercise7StepIdentifier title:@"Triceps" text:@"Triceps dip on chair" image:@"timed-walkingman-outbound" options:options heartRateType:heartRateType bpmUnit:bpmUnit];
-    ORKStepArrayAddStep(steps, sevenMinStep7);
-    
-    
-    //MARK: rest step
-    ORKSevenMinuteExerciseStep *sevenMinRestStep7 = [ORKOrderedTask sevenMinuteTasks:ORKSevenMinRest7StepIdentifier title:@"Rest" text:@"Take 10 sec rest" image:@"sittingman" options:options heartRateType:heartRateType bpmUnit:bpmUnit];
-    ORKStepArrayAddStep(steps, sevenMinRestStep7);
-    
-    //MARK: exercise step
-    ORKSevenMinuteExerciseStep *sevenMinStep8 = [ORKOrderedTask sevenMinuteTasks:ORKSevenMinExercise8StepIdentifier title:@"Plank" text:@"Plank" image:@"timed-walkingman-outbound" options:options heartRateType:heartRateType bpmUnit:bpmUnit];
-    ORKStepArrayAddStep(steps, sevenMinStep8);
-    
-    
-    //MARK: rest step
-    ORKSevenMinuteExerciseStep *sevenMinRestStep8 = [ORKOrderedTask sevenMinuteTasks:ORKSevenMinRest8StepIdentifier title:@"Rest" text:@"Take 10 sec rest" image:@"sittingman" options:options heartRateType:heartRateType bpmUnit:bpmUnit];
-    ORKStepArrayAddStep(steps, sevenMinRestStep8);
-    
-
-
-
-
-//MARK: exercise step
-ORKSevenMinuteExerciseStep *sevenMinStep9 = [ORKOrderedTask sevenMinuteTasks:ORKSevenMinExercise9StepIdentifier title:@"Running" text:@"Start Running High knees in place" image:@"timed-walkingman-outbound" options:options heartRateType:heartRateType bpmUnit:bpmUnit];
-ORKStepArrayAddStep(steps, sevenMinStep9);
-
-
-//MARK: rest step
-ORKSevenMinuteExerciseStep *sevenMinRestStep9 = [ORKOrderedTask sevenMinuteTasks:ORKSevenMinRest9StepIdentifier title:@"Rest" text:@"Take 10 sec rest" image:@"sittingman" options:options heartRateType:heartRateType bpmUnit:bpmUnit];
-ORKStepArrayAddStep(steps, sevenMinRestStep9);
-
-//MARK: exercise step
-    ORKSevenMinuteExerciseStep *sevenMinStep10 = [ORKOrderedTask sevenMinuteTasks:ORKSevenMinExercise10StepIdentifier title:@"Lunge" text:@"Start Lunges" image:@"timed-walkingman-outbound" options:options heartRateType:heartRateType bpmUnit:bpmUnit];
-ORKStepArrayAddStep(steps, sevenMinStep10);
-
-
-//MARK: rest step
-ORKSevenMinuteExerciseStep *sevenMinRestStep10 = [ORKOrderedTask sevenMinuteTasks:ORKSevenMinRest10StepIdentifier title:@"Rest" text:@"Take 10 sec rest" image:@"sittingman" options:options heartRateType:heartRateType bpmUnit:bpmUnit];
-ORKStepArrayAddStep(steps, sevenMinRestStep10);
-
-//MARK: exercise step
-ORKSevenMinuteExerciseStep *sevenMinStep11 = [ORKOrderedTask sevenMinuteTasks:ORKSevenMinExercise11StepIdentifier title:@"Push Up Rotation" text:@"Start Push Up Rotation" image:@"timed-walkingman-outbound" options:options heartRateType:heartRateType bpmUnit:bpmUnit];
-ORKStepArrayAddStep(steps, sevenMinStep11);
-
-
-//MARK: rest step
-ORKSevenMinuteExerciseStep *sevenMinRestStep11 = [ORKOrderedTask sevenMinuteTasks:ORKSevenMinRest11StepIdentifier title:@"Rest" text:@"Take 10 sec rest" image:@"sittingman" options:options heartRateType:heartRateType bpmUnit:bpmUnit];
-ORKStepArrayAddStep(steps, sevenMinRestStep11);
-
-//MARK: exercise step
-ORKSevenMinuteExerciseStep *sevenMinStep12 = [ORKOrderedTask sevenMinuteTasks:ORKSevenMinExercise12StepIdentifier title:@"Side Plank" text:@"Start Side Plank" image:@"timed-walkingman-outbound" options:options heartRateType:heartRateType bpmUnit:bpmUnit];
-ORKStepArrayAddStep(steps, sevenMinStep12);
-
-
-//MARK: rest step
-ORKSevenMinuteExerciseStep *sevenMinRestStep12 = [ORKOrderedTask sevenMinuteTasks:ORKSevenMinRest12StepIdentifier title:@"Rest" text:@"Take 10 sec rest" image:@"sittingman" options:options heartRateType:heartRateType bpmUnit:bpmUnit];
-ORKStepArrayAddStep(steps, sevenMinRestStep12);
-
-}
+        
+        //MARK: rest step
+        [ORKOrderedTask addRestStep:ORKSevenMinRest1StepIdentifier title:restTitle text:restText image:restImage toSteps:steps options:options bpmUnit:bpmUnit heartRateType:heartRateType];
+        
+        //MARK: exercise step
+        ORKSevenMinuteExerciseStep *sevenMinStep2 = [ORKOrderedTask sevenMinuteTasks:ORKSevenMinExercise2StepIdentifier title:@"Wall Set" text:@"Stand with your back to a wall, feet hip-width apart and slightly in front of you. Lean back into the wall, and slide down like youâ€™re sitting down into a chair. Your knees should finish above your ankles, bent at 90 degrees. Hold this position for 30 seconds." image:@"WallSet" options:options heartRateType:heartRateType bpmUnit:bpmUnit];
+        ORKStepArrayAddStep(steps, sevenMinStep2);
+        
+        //MARK: rest step
+        [ORKOrderedTask addRestStep:ORKSevenMinRest2StepIdentifier title:restTitle text:restText image:restImage toSteps:steps options:options bpmUnit:bpmUnit heartRateType:heartRateType];
+        
+        //MARK: exercise step
+        ORKSevenMinuteExerciseStep *sevenMinStep3 = [ORKOrderedTask sevenMinuteTasks:ORKSevenMinExercise3StepIdentifier title:@"Push Ups" text:@"Get into a plank position on the floor or mat, feet together with toes tucked under, hands planted flat below your shoulders. Slowly bend your elbows and lower your body toward the floor, as far down as you can go keeping back and hips level." image:@"PushUp" options:options heartRateType:heartRateType bpmUnit:bpmUnit];
+        ORKStepArrayAddStep(steps, sevenMinStep3);
+        
+        //MARK: rest step
+        [ORKOrderedTask addRestStep:ORKSevenMinRest3StepIdentifier title:restTitle text:restText image:restImage toSteps:steps options:options bpmUnit:bpmUnit heartRateType:heartRateType];
+        
+        //MARK: exercise step
+        ORKSevenMinuteExerciseStep *sevenMinStep4 = [ORKOrderedTask sevenMinuteTasks:ORKSevenMinExercise4StepIdentifier title:@"Abdominal Crunches" text:@"Lie flat on your back, with your knees bent and feet on floor. Tighten your core. Press your lower back into the mat and reach toward top of knees. Return to starting position but keep core tight and repeat for 30 seconds" image:@"AbdominalCrunch" options:options heartRateType:heartRateType bpmUnit:bpmUnit];
+        ORKStepArrayAddStep(steps, sevenMinStep4);
+        
+        //MARK: rest step
+        [ORKOrderedTask addRestStep:ORKSevenMinRest4StepIdentifier title:restTitle text:restText image:restImage toSteps:steps options:options bpmUnit:bpmUnit heartRateType:heartRateType];
+        
+        //MARK: exercise step
+        ORKSevenMinuteExerciseStep *sevenMinStep5 = [ORKOrderedTask sevenMinuteTasks:ORKSevenMinExercise5StepIdentifier title:@"Step-up onto Chair" text:@"Stand facing a sturdy chair or bench. Step up onto the chair or bench with your left leg, coming all the way up to stand on it with both feet fully. Then step back down and come back up, starting with your right leg this time." image:@"StepUpOntoChair" options:options heartRateType:heartRateType bpmUnit:bpmUnit];
+        ORKStepArrayAddStep(steps, sevenMinStep5);
+        
+        //MARK: rest step
+        [ORKOrderedTask addRestStep:ORKSevenMinRest5StepIdentifier title:restTitle text:restText image:restImage toSteps:steps options:options bpmUnit:bpmUnit heartRateType:heartRateType];
+        
+        //MARK: exercise step
+        ORKSevenMinuteExerciseStep *sevenMinStep6 = [ORKOrderedTask sevenMinuteTasks:ORKSevenMinExercise6StepIdentifier title:@"Squat" text:@"Stand with your feet shoulder-width apart and toes forward. Bend your knees as you hinge at the hips, shifting them back and down like you're about to sit in a chair. Lower yourself as far as you comfortably can, keeping most of your weight on your heels" image:@"Squat" options:options heartRateType:heartRateType bpmUnit:bpmUnit];
+        ORKStepArrayAddStep(steps, sevenMinStep6);
+        
+        //MARK: rest step
+        [ORKOrderedTask addRestStep:ORKSevenMinRest6StepIdentifier title:restTitle text:restText image:restImage toSteps:steps options:options bpmUnit:bpmUnit heartRateType:heartRateType];
+        
+        //MARK: exercise step
+        ORKSevenMinuteExerciseStep *sevenMinStep7 = [ORKOrderedTask sevenMinuteTasks:ORKSevenMinExercise7StepIdentifier title:@"Triceps dip on chair" text:@"Sit on the front edge of a stable and sturdy chair or bench, and put your palms on the edge, fingers pointing forward or slightly toward you. Ease off the chair, supporting your weight with your heels and your palms. Slowly bend your elbows as you lower yourself toward the floor, then push back up." image:@"Triceps" options:options heartRateType:heartRateType bpmUnit:bpmUnit];
+        ORKStepArrayAddStep(steps, sevenMinStep7);
+        
+        //MARK: rest step
+        [ORKOrderedTask addRestStep:ORKSevenMinRest7StepIdentifier title:restTitle text:restText image:restImage toSteps:steps options:options bpmUnit:bpmUnit heartRateType:heartRateType];
+        
+        //MARK: exercise step
+        ORKSevenMinuteExerciseStep *sevenMinStep8 = [ORKOrderedTask sevenMinuteTasks:ORKSevenMinExercise8StepIdentifier title:@"Plank" text:@"Lie on your stomach on an exercise mat, with your elbows close to your sides, palms down and fingers facing forward. Lift your torso and thighs off the floor, keeping your body straight. Rest your weight on your elbows and your feet, with toes tucked toward shins" image:@"Plank" options:options heartRateType:heartRateType bpmUnit:bpmUnit];
+        ORKStepArrayAddStep(steps, sevenMinStep8);
+        
+        //MARK: rest step
+        [ORKOrderedTask addRestStep:ORKSevenMinRest8StepIdentifier title:restTitle text:restText image:restImage toSteps:steps options:options bpmUnit:bpmUnit heartRateType:heartRateType];
+        
+        //MARK: exercise step
+        ORKSevenMinuteExerciseStep *sevenMinStep9 = [ORKOrderedTask sevenMinuteTasks:ORKSevenMinExercise9StepIdentifier title:@"High Stepping" text:@"Run in place for 30 seconds, bringing your knees up as high as you can with each step. Focus on lifting your knees up and down rapidly." image:@"HighKneesRunning" options:options heartRateType:heartRateType bpmUnit:bpmUnit];
+        ORKStepArrayAddStep(steps, sevenMinStep9);
+        
+        //MARK: rest step
+        [ORKOrderedTask addRestStep:ORKSevenMinRest9StepIdentifier title:restTitle text:restText image:restImage toSteps:steps options:options bpmUnit:bpmUnit heartRateType:heartRateType];
+        
+        //MARK: exercise step
+        ORKSevenMinuteExerciseStep *sevenMinStep10 = [ORKOrderedTask sevenMinuteTasks:ORKSevenMinExercise10StepIdentifier title:@"Lunges" text:@"Stand with your feet together. Step forward on your right foot, dropping your pelvis down toward the floor (not forward), lowering yourself until both front and back knees are bent as close to a 90-degree angle as possible." image:@"Lunge" options:options heartRateType:heartRateType bpmUnit:bpmUnit];
+        ORKStepArrayAddStep(steps, sevenMinStep10);
+        
+        //MARK: rest step
+        [ORKOrderedTask addRestStep:ORKSevenMinRest10StepIdentifier title:restTitle text:restText image:restImage toSteps:steps options:options bpmUnit:bpmUnit heartRateType:heartRateType];
+        
+        //MARK: exercise step
+        ORKSevenMinuteExerciseStep *sevenMinStep11 = [ORKOrderedTask sevenMinuteTasks:ORKSevenMinExercise11StepIdentifier title:@"Push-up and rotation" text:@"Start in a standard push-up position. Begin a traditional push-up, but as you come back up, shift your weight onto your left side. Rotate your upper body and extend your right arm straight up toward the ceiling. Return to your starting position, then repeat with right side." image:@"PushUpRotation" options:options heartRateType:heartRateType bpmUnit:bpmUnit];
+        ORKStepArrayAddStep(steps, sevenMinStep11);
+        
+        //MARK: rest step
+        [ORKOrderedTask addRestStep:ORKSevenMinRest11StepIdentifier title:restTitle text:restText image:restImage toSteps:steps options:options bpmUnit:bpmUnit heartRateType:heartRateType];
+        
+        //MARK: exercise step
+        ORKSevenMinuteExerciseStep *sevenMinStep12 = [ORKOrderedTask sevenMinuteTasks:ORKSevenMinExercise12StepIdentifier title:@"Side Plank" text:@"Lie on one side on a mat, with your legs straight and your left leg stacked directly on top of the right. Keeping your ankles, knees, hips, and trunk in a straight line, push your weight up on your bent right elbow, which should be directly under your shoulder." image:@"SidePlank" options:options heartRateType:heartRateType bpmUnit:bpmUnit];
+        ORKStepArrayAddStep(steps, sevenMinStep12);
+        
+        //MARK: rest step
+        [ORKOrderedTask addRestStep:ORKSevenMinRest12StepIdentifier title:restTitle text:restText image:restImage toSteps:steps options:options bpmUnit:bpmUnit heartRateType:heartRateType];
+        
+    }
     ORKOrderedTask *task = [[ORKOrderedTask alloc] initWithIdentifier:identifier steps:steps];
     
     return task;

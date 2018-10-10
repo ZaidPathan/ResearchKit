@@ -54,7 +54,7 @@ enum Activity: Int {
             case .tapping:
                 return "Tapping"
             case .trailmaking:
-                return "Trail Making Test"
+                return "Seven Minutes Workout"
         }
     }
     
@@ -67,7 +67,7 @@ enum Activity: Int {
             case .tapping:
                 return "Test tapping speed"
             case .trailmaking:
-                return "Test visual attention"
+                return "Seven Minutes Workout AT"
         }
     }
 }
