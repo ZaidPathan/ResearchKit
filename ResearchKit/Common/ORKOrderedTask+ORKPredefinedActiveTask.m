@@ -2647,6 +2647,7 @@ NSString *const ORKSevenMinExercise9StepIdentifier = @"seven.exercise9";
 NSString *const ORKSevenMinExercise10StepIdentifier = @"seven.exercise10";
 NSString *const ORKSevenMinExercise11StepIdentifier = @"seven.exercise11";
 NSString *const ORKSevenMinExercise12StepIdentifier = @"seven.exercise12";
+NSString *const ORKSevenMinExercise13StepIdentifier = @"seven.exercise13";
 
 NSString *const ORKSevenMinRest1StepIdentifier = @"seven.rest1";
 NSString *const ORKSevenMinRest2StepIdentifier = @"seven.rest2";
@@ -2663,6 +2664,7 @@ NSString *const ORKSevenMinRest9StepIdentifier = @"seven.rest9";
 NSString *const ORKSevenMinRest10StepIdentifier = @"seven.rest10";
 NSString *const ORKSevenMinRest11StepIdentifier = @"seven.rest11";
 NSString *const ORKSevenMinRest12StepIdentifier = @"seven.rest12";
+NSString *const ORKSevenMinRest13StepIdentifier = @"seven.rest13";
 
 //MARK: rest step
 + (void)addRestStep:(NSString *)identifier
@@ -2686,9 +2688,9 @@ NSString *const ORKSevenMinRest12StepIdentifier = @"seven.rest12";
     if (!(options & ORKPredefinedTaskOptionExcludeInstructions)) {
         {
         ORKInstructionStep *step = [[ORKInstructionStep alloc] initWithIdentifier:ORKInstruction0StepIdentifier];
-        step.title = @"Seven Min Exercise";
-        step.text = @"Seven Min Task";
-        step.image = [UIImage imageNamed:@"heartbeat" inBundle:[NSBundle bundleForClass:[self class]] compatibleWithTraitCollection:nil];
+        step.title = @"The 7-Minute Workout";
+        step.text = @"12 exercises deploying only body weight, a chair and a wall, it fulfills the latest mandates for high-intensity effort — all of it based on science.";
+        step.image = [UIImage imageNamed:@"7MinuteWorkout" inBundle:[NSBundle bundleForClass:[self class]] compatibleWithTraitCollection:nil];
         step.shouldTintImages = YES;
         
         ORKStepArrayAddStep(steps, step);
@@ -2696,8 +2698,8 @@ NSString *const ORKSevenMinRest12StepIdentifier = @"seven.rest12";
         
         {
         ORKInstructionStep *step = [[ORKInstructionStep alloc] initWithIdentifier:ORKInstruction1StepIdentifier];
-        step.title = @"Seven Minute Task";
-        step.text = @"Seven Minute Task";
+        step.title = @"Instuctions";
+        step.text = @"In 12 exercises deploying only body weight, a chair and a wall, it fulfills the latest mandates for high-intensity effort, which essentially combines a long run and a visit to the weight room into about seven minutes of steady discomfort — all of it based on science.";
         step.image = [UIImage imageNamed:@"walkingman" inBundle:[NSBundle bundleForClass:[self class]] compatibleWithTraitCollection:nil];
         step.shouldTintImages = YES;
         
@@ -2707,7 +2709,7 @@ NSString *const ORKSevenMinRest12StepIdentifier = @"seven.rest12";
     
     {
     ORKCountdownStep *step = [[ORKCountdownStep alloc] initWithIdentifier:ORKCountdownStepIdentifier];
-    step.title = @"Seven Minute Task";
+    step.title = @"Be ready to start!";
     step.stepDuration = 5.0;
     
     ORKStepArrayAddStep(steps, step);
@@ -2727,7 +2729,7 @@ NSString *const ORKSevenMinRest12StepIdentifier = @"seven.rest12";
         [ORKOrderedTask addRestStep:ORKSevenMinRest1StepIdentifier title:restTitle text:restText image:restImage toSteps:steps options:options bpmUnit:bpmUnit heartRateType:heartRateType];
         
         //MARK: exercise step
-        ORKSevenMinuteExerciseStep *sevenMinStep2 = [ORKOrderedTask sevenMinuteTasks:ORKSevenMinExercise2StepIdentifier title:@"Wall Set" text:@"Stand with your back to a wall, feet hip-width apart and slightly in front of you. Lean back into the wall, and slide down like youâ€™re sitting down into a chair. Your knees should finish above your ankles, bent at 90 degrees. Hold this position for 30 seconds." image:@"WallSet" options:options heartRateType:heartRateType bpmUnit:bpmUnit];
+        ORKSevenMinuteExerciseStep *sevenMinStep2 = [ORKOrderedTask sevenMinuteTasks:ORKSevenMinExercise2StepIdentifier title:@"Wall Set" text:@"Stand with your back to a wall, feet hip-width apart and slightly in front of you. Lean back into the wall, and slide down like you're sitting down into a chair. Your knees should finish above your ankles, bent at 90 degrees. Hold this position for 30 seconds." image:@"WallSet" options:options heartRateType:heartRateType bpmUnit:bpmUnit];
         ORKStepArrayAddStep(steps, sevenMinStep2);
         
         //MARK: rest step
@@ -2797,11 +2799,21 @@ NSString *const ORKSevenMinRest12StepIdentifier = @"seven.rest12";
         [ORKOrderedTask addRestStep:ORKSevenMinRest11StepIdentifier title:restTitle text:restText image:restImage toSteps:steps options:options bpmUnit:bpmUnit heartRateType:heartRateType];
         
         //MARK: exercise step
-        ORKSevenMinuteExerciseStep *sevenMinStep12 = [ORKOrderedTask sevenMinuteTasks:ORKSevenMinExercise12StepIdentifier title:@"Side Plank" text:@"Lie on one side on a mat, with your legs straight and your left leg stacked directly on top of the right. Keeping your ankles, knees, hips, and trunk in a straight line, push your weight up on your bent right elbow, which should be directly under your shoulder." image:@"SidePlank" options:options heartRateType:heartRateType bpmUnit:bpmUnit];
+        ORKSevenMinuteExerciseStep *sevenMinStep12 = [ORKOrderedTask sevenMinuteTasks:ORKSevenMinExercise12StepIdentifier title:@"Side Plank" text:@"Lie right side on a mat, with your legs straight and your left leg stacked directly on top of the right. Keeping your ankles, knees, hips, and trunk in a straight line, push your weight up on your bent right elbow, which should be directly under your shoulder." image:@"SidePlank_Right" options:options heartRateType:heartRateType bpmUnit:bpmUnit];
         ORKStepArrayAddStep(steps, sevenMinStep12);
         
         //MARK: rest step
+        [ORKOrderedTask addRestStep:ORKSevenMinRest13StepIdentifier title:restTitle text:restText image:restImage toSteps:steps options:options bpmUnit:bpmUnit heartRateType:heartRateType];
+        
+        //MARK: exercise step
+        ORKSevenMinuteExerciseStep *sevenMinStep13 = [ORKOrderedTask sevenMinuteTasks:ORKSevenMinExercise13StepIdentifier title:@"Side Plank" text:@"Lie left side on a mat, with your legs straight and your left leg stacked directly on top of the right. Keeping your ankles, knees, hips, and trunk in a straight line, push your weight up on your bent right elbow, which should be directly under your shoulder." image:@"SidePlank_Left" options:options heartRateType:heartRateType bpmUnit:bpmUnit];
+        ORKStepArrayAddStep(steps, sevenMinStep13);
+        
+        //MARK: rest step
         [ORKOrderedTask addRestStep:ORKSevenMinRest12StepIdentifier title:restTitle text:restText image:restImage toSteps:steps options:options bpmUnit:bpmUnit heartRateType:heartRateType];
+        
+        ORKCompletionStep *step = [self makeCompletionStep];
+        ORKStepArrayAddStep(steps, step);
         
     }
     ORKOrderedTask *task = [[ORKOrderedTask alloc] initWithIdentifier:identifier steps:steps];
