@@ -107,10 +107,10 @@
         self.backgroundColor = [[UIColor redColor] colorWithAlphaComponent:0.2];
         _quantityPairView.backgroundColor = [[UIColor orangeColor] colorWithAlphaComponent:0.2];
 #endif
-      
+        
         [self setDistanceInMeters:0];
         [self heartRateView].title = ORKLocalizedString(@"FITNESS_HEARTRATE_TITLE", nil);
-
+        
         [self addSubview:_quantityPairView];
         [self addSubview:_imageView];
         [self addSubview:_timerLabel];
@@ -237,7 +237,7 @@
                                                views:views]];
     
     NSLayoutConstraint *maxWidthConstraint = [NSLayoutConstraint constraintWithItem:self
-                                                                          attribute:NSLayoutAttributeWidth 
+                                                                          attribute:NSLayoutAttributeWidth
                                                                           relatedBy:NSLayoutRelationEqual
                                                                              toItem:nil
                                                                           attribute:NSLayoutAttributeNotAnAttribute

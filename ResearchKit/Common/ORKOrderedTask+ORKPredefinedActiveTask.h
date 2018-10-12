@@ -685,7 +685,6 @@ NS_ASSUME_NONNULL_BEGIN
 + (ORKOrderedTask *)sevenMinuteExerciseWithIdentifier:(NSString *)identifier
                             options:(ORKPredefinedTaskOption)options;
 
-//+ (ORKStep *) sevenMinuteTasks:(NSString *)title text:(NSString *)text image:(NSString *)imageName options:(ORKPredefinedTaskOption)options heartRateType:(HKQuantityType *)heartRateType bpmUnit:(HKUnit *)bpmUnit;
 
 @end
 

@@ -551,6 +551,38 @@
 "SPEECH_IN_NOISE_SPEAK_TITLE" = "Speak";
 "SPEECH_IN_NOISE_SPEAK_TEXT" = "Repeat what you heard.";
 
+/* Seven Minute Exercise Task active task. */
+"SEVEN_MINUTE_EXERCISE_TITLE" = "The 7-Minute Workout";
+"SEVEN_MINUTE_EXERCISE_TEXT" = "In 12 exercises deploying only body weight, a chair and a wall, it fulfills the latest mandates for high-intensity effort, which essentially combines a long run and a visit to the weight room into about seven minutes of steady discomfort — all of it based on science.";
+"SEVEN_MINUTE_EXERCISE_TITLE" = "The 7-Minute Workout";
+"SEVEN_MINUTE_EXERCISE_REST_TITLE" = "Take rest";
+"SEVEN_MINUTE_EXERCISE_REST_TEXT" = "Take 10 seconds rest";
+"SEVEN_MINUTE_EXERCISE_JUMPING_JACK_TITLE" = "Jumping Jack";
+"SEVEN_MINUTE_EXERCISE_JUMPING_JACK_TEXT" = "Stand up with your legs spread and your hands touching overhead. Then as you jump, bring your legs back together and put your arms to your sides. You can speed these up or slow them down to suit your fitness level.";
+"SEVEN_MINUTE_EXERCISE_WALL_SET_TITLE" = "Wall Set";
+"SEVEN_MINUTE_EXERCISE_WALL_SET_TEXT" = "Stand with your back to a wall, feet hip-width apart and slightly in front of you. Lean back into the wall, and slide down like you're sitting down into a chair. Your knees should finish above your ankles, bent at 90 degrees. Hold this position for 30 seconds.";
+"SEVEN_MINUTE_EXERCISE_PUSH_UP_TITLE" = "Push Ups";
+"SEVEN_MINUTE_EXERCISE_PUSH_UP_TEXT" = "Get into a plank position on the floor or mat, feet together with toes tucked under, hands planted flat below your shoulders. Slowly bend your elbows and lower your body toward the floor, as far down as you can go keeping back and hips level.";
+"SEVEN_MINUTE_EXERCISE_ABDOMINAL_CRUNCHES_TITLE" = "Abdominal Crunches";
+"SEVEN_MINUTE_EXERCISE_ABDOMINAL_CRUNCHES_TEXT" = "Lie flat on your back, with your knees bent and feet on floor. Tighten your core. Press your lower back into the mat and reach toward top of knees. Return to starting position but keep core tight and repeat for 30 seconds";
+"SEVEN_MINUTE_EXERCISE_STEP_UP_ONTO_CHAIR_TITLE" = "Step-up onto Chair";
+"SEVEN_MINUTE_EXERCISE_STEP_UP_ONTO_CHAIR_TEXT" = "Stand facing a sturdy chair or bench. Step up onto the chair or bench with your left leg, coming all the way up to stand on it with both feet fully. Then step back down and come back up, starting with your right leg this time.";
+"SEVEN_MINUTE_EXERCISE_SQUAT_TITLE" = "Squat";
+"SEVEN_MINUTE_EXERCISE_SQUAT_TEXT" = "Stand with your feet shoulder-width apart and toes forward. Bend your knees as you hinge at the hips, shifting them back and down like you're about to sit in a chair. Lower yourself as far as you comfortably can, keeping most of your weight on your heels";
+"SEVEN_MINUTE_EXERCISE_TRICEPS_TITLE" = "Triceps dip on chair";
+"SEVEN_MINUTE_EXERCISE_TRICEPS_TEXT" = "Sit on the front edge of a stable and sturdy chair or bench, and put your palms on the edge, fingers pointing forward or slightly toward you. Ease off the chair, supporting your weight with your heels and your palms. Slowly bend your elbows as you lower yourself toward the floor, then push back up.";
+"SEVEN_MINUTE_EXERCISE_PLANK_TITLE" = "Plank";
+"SEVEN_MINUTE_EXERCISE_PLANK_TEXT" = "Lie on your stomach on an exercise mat, with your elbows close to your sides, palms down and fingers facing forward. Lift your torso and thighs off the floor, keeping your body straight. Rest your weight on your elbows and your feet, with toes tucked toward shins";
+"SEVEN_MINUTE_EXERCISE_HIGH_STEPPING_TITLE" = "High Stepping";
+"SEVEN_MINUTE_EXERCISE_HIGH_STEPPING_TEXT" = "Run in place for 30 seconds, bringing your knees up as high as you can with each step. Focus on lifting your knees up and down rapidly.";
+"SEVEN_MINUTE_EXERCISE_LUNGES_TITLE" = "Lunges";
+"SEVEN_MINUTE_EXERCISE_LUNGES_TEXT" = "Stand with your feet together. Step forward on your right foot, dropping your pelvis down toward the floor (not forward), lowering yourself until both front and back knees are bent as close to a 90-degree angle as possible.";
+"SEVEN_MINUTE_EXERCISE_PUSH_UP_ROTATE_TITLE" = "Push-up and rotation";
+"SEVEN_MINUTE_EXERCISE_PUSH_UP_ROTATE_TEXT" = "Start in a standard push-up position. Begin a traditional push-up, but as you come back up, shift your weight onto your left side. Rotate your upper body and extend your right arm straight up toward the ceiling. Return to your starting position, then repeat with right side.";
+"SEVEN_MINUTE_EXERCISE_SIDE_PLANK_TITLE" = "Side Plank";
+"SEVEN_MINUTE_EXERCISE_SIDE_PLANK_RIGHT_TEXT" = "Lie right side on a mat, with your legs straight and your left leg stacked directly on top of the right. Keeping your ankles, knees, hips, and trunk in a straight line, push your weight up on your bent right elbow, which should be directly under your shoulder.";
+"SEVEN_MINUTE_EXERCISE_SIDE_PLANK_LEFT_TEXT" = "Lie left side on a mat, with your legs straight and your left leg stacked directly on top of the right. Keeping your ankles, knees, hips, and trunk in a straight line, push your weight up on your bent right elbow, which should be directly under your shoulder.";
+
 /* Potentially user visible error messages. */
 "ERROR_DATALOGGER_CREATE_FILE" = "Could not create file";
 "ERROR_DATALOGGER_COULD_NOT_FREE_SPACE" = "Could not remove sufficient log files to reach threshold";
