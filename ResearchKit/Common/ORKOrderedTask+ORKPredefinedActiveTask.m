@@ -2766,12 +2766,12 @@ NSString *const ORKSevenMinRest13StepIdentifier = @"seven.rest13";
     
     [ORKOrderedTask addRestStep:ORKSevenMinRest11StepIdentifier title:restTitle text:restText image:restImage toSteps:steps options:options bpmUnit:bpmUnit heartRateType:heartRateType];
     
-    ORKSevenMinuteExerciseStep *sevenMinStep12 = [ORKOrderedTask sevenMinuteTasks:ORKSevenMinExercise12StepIdentifier title:ORKLocalizedString(@"SEVEN_MINUTE_EXERCISE_SIDE_PLANK_TITLE", nil) text:ORKLocalizedString(@"SEVEN_MINUTE_EXERCISE_SIDE_PLANK_RIGHT_TEXT", nil) image:@"SidePlank_Right" options:options heartRateType:heartRateType bpmUnit:bpmUnit];
+    ORKSevenMinuteExerciseStep *sevenMinStep12 = [ORKOrderedTask sevenMinuteTasks:ORKSevenMinExercise12StepIdentifier title:ORKLocalizedString(@"SEVEN_MINUTE_EXERCISE_SIDE_PLANK_TITLE_RIGHT", nil) text:ORKLocalizedString(@"SEVEN_MINUTE_EXERCISE_SIDE_PLANK_RIGHT_TEXT", nil) image:@"SidePlank_Right" options:options heartRateType:heartRateType bpmUnit:bpmUnit];
     ORKStepArrayAddStep(steps, sevenMinStep12);
     
     [ORKOrderedTask addRestStep:ORKSevenMinRest13StepIdentifier title:restTitle text:restText image:restImage toSteps:steps options:options bpmUnit:bpmUnit heartRateType:heartRateType];
     
-    ORKSevenMinuteExerciseStep *sevenMinStep13 = [ORKOrderedTask sevenMinuteTasks:ORKSevenMinExercise13StepIdentifier title:ORKLocalizedString(@"SEVEN_MINUTE_EXERCISE_SIDE_PLANK_TITLE", nil) text:ORKLocalizedString(@"SEVEN_MINUTE_EXERCISE_SIDE_PLANK_LEFT_TEXT", nil) image:@"SidePlank_Left" options:options heartRateType:heartRateType bpmUnit:bpmUnit];
+    ORKSevenMinuteExerciseStep *sevenMinStep13 = [ORKOrderedTask sevenMinuteTasks:ORKSevenMinExercise13StepIdentifier title:ORKLocalizedString(@"SEVEN_MINUTE_EXERCISE_SIDE_PLANK_TITLE_LEFT", nil) text:ORKLocalizedString(@"SEVEN_MINUTE_EXERCISE_SIDE_PLANK_LEFT_TEXT", nil) image:@"SidePlank_Left" options:options heartRateType:heartRateType bpmUnit:bpmUnit];
     ORKStepArrayAddStep(steps, sevenMinStep13);
     
     [ORKOrderedTask addRestStep:ORKSevenMinRest12StepIdentifier title:restTitle text:restText image:restImage toSteps:steps options:options bpmUnit:bpmUnit heartRateType:heartRateType];

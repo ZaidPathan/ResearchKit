@@ -552,9 +552,8 @@
 "SPEECH_IN_NOISE_SPEAK_TEXT" = "Repeat what you heard.";
 
 /* Seven Minute Exercise Task active task. */
-"SEVEN_MINUTE_EXERCISE_TITLE" = "The 7-Minute Workout";
-"SEVEN_MINUTE_EXERCISE_TEXT" = "In 12 exercises deploying only body weight, a chair and a wall, it fulfills the latest mandates for high-intensity effort, which essentially combines a long run and a visit to the weight room into about seven minutes of steady discomfort — all of it based on science.";
-"SEVEN_MINUTE_EXERCISE_TITLE" = "The 7-Minute Workout";
+"SEVEN_MINUTE_EXERCISE_TITLE" = "7 Minute Workout";
+"SEVEN_MINUTE_EXERCISE_TEXT" = "It's a short, rapid-fire series of exercises that use your own body weight. Start with something you learned in elementary school: Jumping Jacks. Stand up with your legs spread and your hands touching overhead. Then as you jump, bring your legs back together and put your arms to your sides. You can speed these up or slow them down to suit your fitness level.";
 "SEVEN_MINUTE_EXERCISE_REST_TITLE" = "Take rest";
 "SEVEN_MINUTE_EXERCISE_REST_TEXT" = "Take 10 seconds rest";
 "SEVEN_MINUTE_EXERCISE_JUMPING_JACK_TITLE" = "Jumping Jack";
@@ -579,7 +578,8 @@
 "SEVEN_MINUTE_EXERCISE_LUNGES_TEXT" = "Stand with your feet together. Step forward on your right foot, dropping your pelvis down toward the floor (not forward), lowering yourself until both front and back knees are bent as close to a 90-degree angle as possible.";
 "SEVEN_MINUTE_EXERCISE_PUSH_UP_ROTATE_TITLE" = "Push-up and rotation";
 "SEVEN_MINUTE_EXERCISE_PUSH_UP_ROTATE_TEXT" = "Start in a standard push-up position. Begin a traditional push-up, but as you come back up, shift your weight onto your left side. Rotate your upper body and extend your right arm straight up toward the ceiling. Return to your starting position, then repeat with right side.";
-"SEVEN_MINUTE_EXERCISE_SIDE_PLANK_TITLE" = "Side Plank";
+"SEVEN_MINUTE_EXERCISE_SIDE_PLANK_TITLE_LEFT" = "Side Plank Left";
+"SEVEN_MINUTE_EXERCISE_SIDE_PLANK_TITLE_RIGHT" = "Side Plank Right";
 "SEVEN_MINUTE_EXERCISE_SIDE_PLANK_RIGHT_TEXT" = "Lie right side on a mat, with your legs straight and your left leg stacked directly on top of the right. Keeping your ankles, knees, hips, and trunk in a straight line, push your weight up on your bent right elbow, which should be directly under your shoulder.";
 "SEVEN_MINUTE_EXERCISE_SIDE_PLANK_LEFT_TEXT" = "Lie left side on a mat, with your legs straight and your left leg stacked directly on top of the right. Keeping your ankles, knees, hips, and trunk in a straight line, push your weight up on your bent right elbow, which should be directly under your shoulder.";
 
